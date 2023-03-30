@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 8px;
+    border-bottom: 2px solid #ccc;
+}
+
+.header_logo img{
+    width: 70px;
+}
+
+.header_user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.header_user a{
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(3,169,252);
+    text-decoration: none;
+    width: 50px;
+    padding-top: 10px;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 25px;
+    
+}
+
+.header_pesquisa{
+    width: 60%;
+}
+
+.header_pesquisa input[type=text]{
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 8px;
+    padding-left: 9px;
+    font-weight: bold;
+    background-color: rgb(230,230,230);
+}
+
+.main_header{
+    width: 100%;
+    display: flex;
+}
+
+.sidebar{
+    width: 300px;
+    padding: 40px 10px;
+}
+
+.main_content{
+    width: calc(100% - 300px);
+    padding: 10px;
+}
+
+.input_hidden{
+    display: none;
+}
+
+.btn_file{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main_foldersDrive{
+    margin-top: 30px;
+    background-color: rgba(3,169,252,0.2);
+    padding: 8px;
+    border-radius: 8px;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.main_foldersDrive svg{
+    font-size: 23px;
+    color: rgb(3,169,252);
+    position: relative;
+    top: 5px;
+}
+
+.main_foldersDrive span{
+    padding-left: 30px;
+    position: relative;
+    top: -5px;
+    color: rgb(3,169,252);
+}
+
+.mainTopoText{
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+    color: #333;
+}
+
+.boxFiles{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.boxFilesSingle{
+    width: 31%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.boxFilesSingle svg{
+    font-size: 30px;
+}
+
+.boxFilesSingle a{
+    display: block;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+@media screen and (max-width:768px){
+    .main_header{
+        flex-wrap: wrap;
+    }
+    .main_content,.sidebar{
+        width: 100%;
+    }
+}
